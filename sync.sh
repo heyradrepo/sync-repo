@@ -46,3 +46,4 @@ clone_or_pull "https://github.com/heyradrepo/hardware_mediatek" "hardware/mediat
 clone_or_pull "https://github.com/heyradrepo/hardware_xiaomi" "hardware/xiaomi" "lineage-21"
 clone_or_pull "https://github.com/heyradrepo/android_device_mediatek_sepolicy_vndr" "device/mediatek/sepolicy_vndr" "lineage-21"
 clone_or_pull "https://codeberg.org/heyradrepo/vendor_miuicameraleica" "vendor/MiuiCameraLeica" "udc"
+clone_or_pull "https://github.com/heyradrepo/android_vendor_xiaomi_rosemary" "vendor/xiaomi/rosemary" "udc"
