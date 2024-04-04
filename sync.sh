@@ -26,7 +26,11 @@ clone_or_pull() {
     else
         # If directory doesn't exist, clone the repository
         printf "Cloning ${repo_url} into ${repo_path}... "
-        git clone --branch "$branch" "$repo_url" "$repo_path" &> /dev/null
+        if [ "$repo_path" == "kernel/xiaomi/mt6785" ]; then
+            git clone --depth 1 --branch "$branch" "$repo_url" "$repo_path" &> /dev/null
+        else
+            git clone --branch "$branch" "$repo_url" "$repo_path" &> /dev/null
+        fi
         if [ $? -eq 0 ]; then
             printf "${GREEN}Success${NC}\n"
         else
